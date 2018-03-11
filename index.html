@@ -1,7 +1,38 @@
 <html>
 	<head>
+			<title></title>
 	</head>
 	<body>
-		<a href="https://cooking.stackexchange.com/questions/25492/whats-this-pucker-style-hole-on-my-cheese-grater-for?noredirect=1&lq=1">Linky</a>
+		<div style="text-align: center; padding-top: 10%">
+			<div style="display: inline-block;" class="fenetre">
+			<a href="#" onclick="pickimg2();return false;">
+				<img src="index_0000.jpg" name="randimg" border=0>
+			</a>
+		</div>
+	</div>
+	<script>
+		var myImages1 = new Array();
+		myImages1.push("index_0000.jpg");
+		myImages1.push("index_0001.jpg");
+		myImages1.push("index_0002.jpg");
+		myImages1.push("index_0003.jpg");
+		myImages1.push("index_0004.jpg");
+		myImages1.push("index_0005.jpg");
+		myImages1.push("index_0006.jpg");
+		myImages1.push("index_0007.jpg");
+		myImages1.push("index_0008.jpg");
+		myImages1.push("index_0009.jpg");
+		myImages1.push("index_0010.jpg");
+		myImages1.push("index_0011.jpg");
+
+		 function getRandomInt(min, max) {
+		 	return Math.floor(Math.random() * (max - min + 1)) + min;		
+		 }
+
+		 function pickimg2() {
+		 	document.randimg.src = myImages1[getRandomInt(0, myImages1.length - 1)];
+		 }
+		</script>
+
 	</body>
 </html>
